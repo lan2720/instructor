@@ -169,3 +169,6 @@ tutorials/results.jsonl
 tutorials/results.jsonlines
 tutorials/schema.json
 wandb/settings
+
+# add by jarvix
+notebook

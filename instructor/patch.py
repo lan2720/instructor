@@ -170,8 +170,8 @@ def process_response(
         )
         if not stream:
             model._raw_response = response
-            if is_model_multitask:
-                return model.tasks
+            # if is_model_multitask:
+            #     return model.tasks
         return model
     return response
 
