@@ -1,4 +1,4 @@
-# Extracting Tables From Images
+# Extracting Tables using GPT-Vision
 
 This post demonstrates how to use Python's type annotations and OpenAI's new vision model to extract tables from images and convert them into markdown format. This method is particularly useful for data analysis and automation tasks.
 
@@ -30,7 +30,7 @@ def md_to_df(data: Any) -> Any:
     return data
 
 MarkdownDataFrame = Annotated[
-    InstanceOf(pd.DataFrame),
+    InstanceOf[pd.DataFrame],
     BeforeValidator(md_to_df),
     PlainSerializer(lambda df: df.to_markdown()),
     WithJsonSchema(

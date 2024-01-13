@@ -69,6 +69,7 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  custom_dir: docs/overrides
 # Extensions
 markdown_extensions:
   - abbr
@@ -133,6 +134,7 @@ nav:
     - Fields: 'concepts/fields.md'
     - Missing: "concepts/maybe.md"
     - Patching: 'concepts/patching.md'
+    - Raw Response: 'concepts/raw_response.md'
     - Streaming: "concepts/lists.md"
     - FastAPI: 'concepts/fastapi.md'
     - Caching: 'concepts/caching.md'
@@ -141,27 +143,26 @@ nav:
     - Types: 'concepts/types.md'
     - Union: 'concepts/union.md'
     - Alias: 'concepts/alias.md'
+    - Enums: 'concepts/enums.md'
     - Type Adapter: 'concepts/typeadapter.md'
   - Cookbook:
-    - Overview: 'examples/index.md'
+    - Examples: 'examples/index.md'
     - Text Classification: 'examples/classification.md'
-    - Self Critique: 'examples/self_critique.md'
-    - Image Extracting Tables: 'examples/extracting_tables.md'
-    - Image to Ad Copy: 'examples/image_to_ad_copy.md'
-    - Moderation: 'examples/moderation.md'
-    - Citations: 'examples/exact_citations.md'
-    - Knowledge Graph: 'examples/knowledge_graph.md'
-    - Entity Resolution: 'examples/entity_resolution.md'
-    - Search Queries: 'examples/search.md'
-    - Query Decomposition: 'examples/planning-tasks.md'
-    - Recursive Schemas: 'examples/recursive.md'
-    - Table Extraction: 'examples/autodataframe.md'
-    - Action Item and Dependency Mapping: 'examples/action_items.md'
+    - LLM Self Critique: 'examples/self_critique.md'
+    - Extracting Tables with GPT-V: 'examples/extracting_tables.md'
+    - Content Moderation: 'examples/moderation.md'
+    - Citing Sources (RAG): 'examples/exact_citations.md'
+    - Extracting Knowledge Graphs: 'examples/knowledge_graph.md'
+    - Extracting Complex Entities: 'examples/entity_resolution.md'
+    - Expanding Search Queries (RAG): 'examples/search.md'
+    - Query Planning (RAG): 'examples/planning-tasks.md'
+    - Extracting Related Action Items: 'examples/action_items.md'
     - Multi-File Code Generation: 'examples/gpt-engineer.md'
     - PII Data Sanitization: 'examples/pii.md'
-    - Open Source: 'examples/open_source.md'
+    - Enabling Open Source Models: 'examples/open_source.md'
+    - Image to Ad Copy: 'examples/image_to_ad_copy.md'
   - CLI Reference:
-      - "Introduction": "cli/index.md"
+      - "CLI Reference": "cli/index.md"
       - "Finetuning GPT-3.5": "cli/finetune.md"
       - "Usage Tracking": "cli/usage.md"
   - API Reference:

@@ -13,8 +13,18 @@ _Structured extraction in Python, powered by OpenAI's function calling API, desi
 [![Twitter Follow](https://img.shields.io/twitter/follow/jxnlco?style=social)](https://twitter.com/jxnlco)
 [![Coverage Status](https://coveralls.io/repos/github/jxnl/instructor/badge.svg?branch=add-coveralls)](https://coveralls.io/github/jxnl/instructor?branch=add-coveralls)
 [![Instructor](https://img.shields.io/badge/instructor-blog-blue)](https://jxnl.github.io/instructor/blog/)
+[![Discord](https://img.shields.io/discord/1192334452110659664?label=discord)](https://discord.gg/CV8sPM5k5Y)
 
 Dive into the world of Python-based structured extraction, empowered by OpenAI's cutting-edge function calling API. Instructor stands out for its simplicity, transparency, and user-centric design. Whether you're a seasoned developer or just starting out, you'll find Instructor's approach intuitive and its results insightful.
+
+## Ports to other languages
+
+Check out ports to other languages below:
+
+- [Typescript / Javascript](https://www.github.com/jxnl/instructor-js)
+- [Elixir](https://github.com/thmsmlr/instructor_ex/)
+
+If you want to port Instructor to another language, please reach out to us on [Twitter](https://twitter.com/jxnlco) we'd love to help you get started!
 
 ## Get Started in Moments
 
@@ -29,9 +39,11 @@ Our `instructor.patch` for the `OpenAI` class introduces three key enhancements:
 - **Validation Context:** Provide a context object for enhanced validator access. A Glimpse into Instructor's Capabilities.
 
 ### Using Validators
+
 To learn more about validators, checkout our blog post [Good LLM validation is just good validation](https://jxnl.github.io/instructor/blog/2023/10/23/good-llm-validation-is-just-good-validation/)
 
 ## Usage
+
 With Instructor, your code becomes more efficient and readable. Here’s a quick peek:
 
 ```py hl_lines="5 13"
@@ -147,7 +159,7 @@ assert user.age == 25
 
 ## Pydantic Validation
 
-Validation can also be plugged into the same Pydantic model. 
+Validation can also be plugged into the same Pydantic model.
 
 In this example, if the answer attribute contains content that violates the rule "Do not say objectionable things", Pydantic will raise a validation error.
 

@@ -1,16 +1,25 @@
 # Instructor
 
-_Structured extraction in Python, powered by OpenAI's function calling api, designed for simplicity, transparency, and control._
+_Structured extraction in Python, powered by llms, designed for simplicity, transparency, and control._
 
 ---
 
-[![Pydantic v2](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/pydantic/pydantic/main/docs/badge/v2.json)](https://pydantic.dev)
 [![Twitter Follow](https://img.shields.io/twitter/follow/jxnlco?style=social)](https://twitter.com/jxnlco)
+[![Discord](https://img.shields.io/discord/1192334452110659664?label=discord)](https://discord.gg/CV8sPM5k5Y)
 [![Downloads](https://img.shields.io/pypi/dm/instructor.svg)](https://pypi.python.org/pypi/instructor)
 [![Documentation](https://img.shields.io/badge/docs-available-brightgreen)](https://jxnl.github.io/instructor)
 [![GitHub issues](https://img.shields.io/github/issues/jxnl/instructor.svg)](https://github.com/jxnl/instructor/issues)
 
 Dive into the world of Python-based structured extraction, by OpenAI's function calling API and Pydantic, the most widely used data validation library for Python. Instructor stands out for its simplicity, transparency, and user-centric design. Whether you're a seasoned developer or just starting out, you'll find Instructor's approach intuitive and steerable.
+
+!!! tip "Support in other languages"
+
+    Check out ports to other languages below:
+
+    - [Typescript / Javascript](https://www.github.com/jxnl/instructor-js)
+    - [Elixir](https://github.com/thmsmlr/instructor_ex/)
+
+    If you want to port Instructor to another language, please reach out to us on [Twitter](https://twitter.com/jxnlco) we'd love to help you get started!
 
 ## Usage
 
@@ -42,7 +51,7 @@ assert user.age == 25
 
 **Using async clients**
 
-For async clients you must use apatch vs patch like so:
+For async clients you must use `apatch` vs `patch` like so:
 
 ```py
 import instructor
@@ -88,7 +97,7 @@ assert isinstance(model, UserExtract)
 
 The question of using Instructor is fundamentally a question of why to use Pydantic.
 
-1. **Powered by type hints** — Instructor is powered by Pydantic, which is powered by type hints. Schema validation, prompting is controleld by type annotations; less to learn, less code ot write, and integrates with your IDE.
+1. **Powered by type hints** — Instructor is powered by Pydantic, which is powered by type hints. Schema validation, prompting is controlled by type annotations; less to learn, less code to write, and integrates with your IDE.
 
 2. **Powered by OpenAI** — Instructor is powered by OpenAI's function calling API. This means you can use the same API for both prompting and extraction.
 
@@ -108,7 +117,7 @@ If you'd like to see more check out our [cookbook](examples/index.md).
 
 ## Contributing
 
-If you want to help out checkout some of the issues marked as `good-first-issue` or `help-wanted`. Found [here](https://github.com/jxnl/instructor/labels/good%20first%20issue). They could be anything from code improvements, a guest blog post, or a new cook book.
+If you want to help out, checkout some of the issues marked as `good-first-issue` or `help-wanted`. Found [here](https://github.com/jxnl/instructor/labels/good%20first%20issue). They could be anything from code improvements, a guest blog post, or a new cook book.
 
 ## License
 
