@@ -30,7 +30,7 @@ def process_requirements():
 
 setup(name='instructor',
       description='instructor by jxnl',
-      version='0.4.5rc1',
+      version='0.4.6rc1',
       author='jarvixwang',
       packages=find_packages(),
       package_dir={'instructor': 'instructor'},
